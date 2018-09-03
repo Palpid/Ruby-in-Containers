@@ -1,7 +1,8 @@
-require "sinatra "   
+require 'sinatra'
+require 'sinatra/base'
 
-get '/' 
-
-"Hello World !"  
-
+class MyApp < Sinatra::Base
+  get '/' do
+    "Welcome to sinatra in Containers"
+  end
 end

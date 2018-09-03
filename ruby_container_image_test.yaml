@@ -43,4 +43,4 @@ metadataTest:
     value: 'Joannah Nanjekye'
   workdir: ['/app']
   exposedPorts: ['9292']
-  cmd: ['ruby app.py']
+  cmd: ["bundle", "exec", "rackup", "config.ru", "-p", "80", "-s", "thin", "-o", "0.0.0.0"]
